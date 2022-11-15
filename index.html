@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Forms</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h1>Forms</h1>
+        <div class="description">
+            <label for="name">Повне ім’я</label>
+        </div>
+        <div class="input-field">
+            <input required type="text" id="name" >
+        </div>
+        <div class="description">
+            <label for="mail">Email</label> 
+        </div>
+        <div class="input-field">
+            <input required type="email" id="mail">
+        </div>
+        <div class="description">
+            <label for="password">Пароль</label>
+        </div>
+        <div class="input-field">
+            <input required type="password" id="password">
+        </div>
+        <div class="description">
+            <label for="password-repeat">Пароль ще раз</label>
+        </div>
+        <div class="input-field">
+            <input required type="password" id="password-repeat">
+        </div>  
+        <div class="description">
+            <p сlass="point">Cтать</p>
+        </div>
+        <div class="input-field-radio">
+            <input type="radio" name="test" value="Чоловіча" checked>чоловіча
+            <label><input type="radio" name="test" value="Жіноча">жіноча</label>
+        </div>
+        <div class="description-age">
+            <label for="age">Вік</label>
+        </div>
+        <div class="input-field">
+            <input required type="number" max="150" id="age">
+        </div>  
+        <div class="description">
+            <label for="course">Курс</label>
+        </div>
+        <div class="input-field">
+            <select name="" id="course" required>
+                <option value="">-=Виберіть курс=-</option>
+                <option value="">Front-end</option>
+                <option value="">Back-end</option>
+                <option value="">Python</option>
+                <option value="">Sketch</option>
+                <option value="">Design</option>
+                <option value="">Other</option>
+            </select>
+        </div>
+        <div class="description">
+            <label for="address">Повна адреса</label>
+        </div>
+        <div class="input-field">
+            <textarea name="" id="address" cols="20" rows="4" placeholder="Країна,регіон,місто/селище,вулиця" required></textarea>
+        </div>
+            <label><input type="checkbox" value="value1" required>Я погоджуюсь з обробкою персональних даних</label>
+        <div class="buttons">
+            <button type="reset">Очистити форму</button>
+            <button type="submit">Зареєструватися</button>
+        </div>
+        </form>  
+    </div>
+</body>
+</html>
